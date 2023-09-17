@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DanhSachDate.cs" />
     <Compile Include="HCN.cs" />
+    <Compile Include="Date.cs" />
     <Compile Include="Nguoi.cs" />
     <Compile Include="PhanSo.cs" />
     <Compile Include="Program.cs" />

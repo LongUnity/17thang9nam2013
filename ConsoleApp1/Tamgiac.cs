@@ -72,6 +72,31 @@ namespace ConsoleApp1
                 Console.WriteLine("Vuông tại đỉnh B");
                 return true;
             }
+            Console.WriteLine("Không phải là tam giác vuông");
+            return false;
+        }
+        public Boolean checkTamgiaccan()
+        {
+            double AB = this.A.khoangCach(this.B);
+            double BC = this.B.khoangCach(this.C);
+            double CA = this.C.khoangCach(this.A);
+
+            if (AB == CA)
+            {
+                Console.WriteLine("Cân tại đỉnh A");
+                return true;
+            }
+            else if (BC==AB)
+            {
+                Console.WriteLine("Cân tại đỉnh B");
+                return true;
+            }
+            else if (CA == BC)
+            {
+                Console.WriteLine("Cân tại đỉnh C");
+                return true;
+            }
+            Console.WriteLine("Không phải là tam giác cân");
             return false;
         }
 
